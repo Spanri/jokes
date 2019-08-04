@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "jokes",
   "author": "Anna Kozlova <kozlova9v@mail.ru>",
   "private": true,
   "scripts": {

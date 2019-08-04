@@ -1,13 +1,14 @@
 <template lang="pug">
-	#app
-		header-page
-		router-view
-		footer-page
+  #app
+    header-page
+    .home
+      router-view
+    footer-page
 </template>
 
 <script>
-import HeaderPage from './components/HeaderPage'
-import FooterPage from './components/FooterPage'
+import HeaderPage from './components/Header'
+import FooterPage from './components/Footer'
 
 export default {
 	name: 'App',
@@ -20,11 +21,16 @@ export default {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
 	color: #2c3e50;
 	min-height: calc(100vh - 30px);
 	margin: 15px;
 	display: grid;
 	grid-template-rows: max-content auto max-content;
+}
+.home{
+  background-color: #f8e7c3;
+  margin: 0;
+  margin-top: 15px;
+  height: calc(100% - 55px);
 }
 </style>

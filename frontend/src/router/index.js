@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Block from '@/components/Block'
 import Profile from '@/components/Profile'
-import MainPage from '@/components/MainPage'
+import Home from '@/components/Home'
 import News from '@/components/News'
 import Tasks from '@/components/Tasks'
 
@@ -23,7 +23,7 @@ export default new Router({
 				{
 					path: '/main',
 					name: 'main2',
-					component: MainPage
+          component: Home
 				},
 				{
 					path: '/news',
