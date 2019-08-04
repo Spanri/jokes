@@ -28,7 +28,7 @@ export default {
 	grid-template-rows: max-content auto max-content;
 }
 .home{
-  background-color: #f8e7c3;
+  /* background-color: #e3f7fa; */
   margin: 0;
   margin-top: 15px;
   height: calc(100% - 55px);

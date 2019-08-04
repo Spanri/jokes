@@ -2,6 +2,12 @@ import { Router } from 'express'
 
 const router = new Router()
 
+import VK from 'vk-io';
+
+const vk = new VK({
+  token: "***REMOVED***"
+});
+
 /**
  * @api {get} /users/:id Retrieve user
  * @apiName RetrieveUser
@@ -10,8 +16,14 @@ const router = new Router()
  * @apiSuccess {Object} user User's data.
  * @apiError 404 User not found.
  */
-router.get('/', function (req, res) {
-  res.send('hello world')
+router.post('/last', async function (req, res) {
+  const response = await vk.api.wall.get({
+    owner_id: -92876084,
+    is_pinned: 0,
+    post_type: "post",
+    count: req.body.count
+  });
+  res.send(response)
 })
 
 export default router

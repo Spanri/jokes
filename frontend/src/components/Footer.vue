@@ -36,4 +36,9 @@ a:hover{
     color: #2b68a1;
 	transition: all .3s ease-out;
 }
+@media (max-width: 600px) {
+  *{
+    font-size: 13px;
+  }
+}
 </style>
