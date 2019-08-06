@@ -18,7 +18,7 @@ export default {
     created(){
       Note.last(20).then(r => {
         console.log(r);
-        this.jokes = r.items.filter(el => el != r[0]);
+        this.jokes = r.items.filter(el => el != r.items[0]);
       });
     }
 }

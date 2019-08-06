@@ -5,7 +5,7 @@ const router = new Router()
 import VK from 'vk-io';
 
 const vk = new VK({
-  token: "***REMOVED***"
+  token: process.env['VK_KEY']
 });
 
 /**
